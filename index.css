@@ -35,7 +35,7 @@ html {
     height: 100%;
     /*Change it to 100%*/
     width: 100%;
-    border-radius: 20px;
+    border-radius: 10px;
     background-color: white;
     overflow: hidden;
     flex-direction: column;
@@ -142,6 +142,7 @@ html {
     height: 100%; un
     width: 100%; un */
     height: auto;
+    /* max-width: 200vw; */
     /* max-width: 100%; */
     /* width: 100vw; */
     flex-direction: column;
@@ -160,7 +161,7 @@ html {
     margin-top: 2%;
     /* align-items: center; */
     justify-items: center;
-    border-radius: 20px;
+    border-radius: 10px;
     box-shadow: 0px 10px 8px 0px rgba(0, 0, 0, 0.2);
     /* margin-bottom: 2%; */
     display: flex;
@@ -185,7 +186,7 @@ html {
     /* padding-right: 2.5%; */
     display: flex;
     background-color: #c7cfb7;
-    border-radius: 20px;
+    border-radius: 10px;
     /* flex:1 2; */
     flex-direction: column;
     /* height: 100%; */
@@ -196,7 +197,7 @@ html {
 }
 
 .rightcontent {
-    border-radius: 0px 30px 30px 0px;
+    border-radius: 0px 10px 10px 0px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -622,7 +623,7 @@ hr {
 
 .project-card {
     display: flex;
-    border-radius: 20px;
+    border-radius: 10px;
     /* border-radius: 20px; */
     margin: 1%;
     /* justify-items: center; */
@@ -807,11 +808,12 @@ hr {
     }
     .left {
         width: 100%;
+        height: 100vh;
     }
     .right {
         /* display: none; */
         width: 100%;
-        height: 100%;
+        height: 100vh;
         /* bottom: 0; */
     }
     .left-upper h1 {
@@ -956,6 +958,9 @@ hr {
         justify-content: center;
         min-height: 100vh;
     }
+    .card {
+        height: 95%;
+    }
 }
 
 @media screen and (max-width: 900px) {
@@ -964,9 +969,18 @@ hr {
     }
 }
 
-@media screen and (min-width: 601px) and (max-width: 1100px){
+/* @media screen and (min-width: 601px) and (max-width: 1100px){
     .card {
         height: 100vh;
+    }
+} */
+
+@media screen and (max-width: 1100px){
+    .container{
+        min-height: 80vh;
+    }
+    .card{
+        min-height: 95vh;
     }
 }
 
