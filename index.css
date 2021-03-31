@@ -156,7 +156,7 @@ html {
 }
 
 .card {
-    height: 100%;
+    height: fit-content;
     width: 99%;
     margin-top: 2%;
     /* align-items: center; */
@@ -165,7 +165,7 @@ html {
     box-shadow: 0px 10px 8px 0px rgba(0, 0, 0, 0.2);
     /* margin-bottom: 2%; */
     display: flex;
-    background-color: #9dad7f
+    background-color: #9dad7f;
     /* background-color: salmon; */
     /* min-height: 60%; */
     /* flex-wrap: wrap */
@@ -233,6 +233,8 @@ html {
     /* height: 20%; */
     padding: 1%;
     text-align: justify;
+    display: flex;
+    flex-direction: column;
 }
 
 .objective {
@@ -309,13 +311,13 @@ a {
     text-decoration: none;
     list-style: none;
     margin-right: 10px;
-    transition-delay: 0.2s;
+    transition-duration: 0.2s;
 }
 
 .custom-icon:hover {
     color: white;
     transition-delay: 0s;
-    transition-duration: 0.5s;
+    transition-duration: 0.2s;
 }
 
 .left-upper {
@@ -450,9 +452,9 @@ a {
     background: #383838;
 }
 
-.carousel {
+/* .carousel {
     box-shadow: 0 0 50px rgba(0, 0, 0, 0.8);
-}
+} */
 
 
 /* The dots/bullets/indicators */
@@ -816,6 +818,13 @@ hr {
         height: 100vh;
         /* bottom: 0; */
     }
+
+
+
+    .img-right img{
+        width: 70%;
+    }
+
     .left-upper h1 {
         margin-left: 0%;
         width: 100%;
@@ -873,7 +882,7 @@ hr {
         bottom: 0;
     } */
     .project-container {
-        height: auto;
+        height: 100vh;
         display: flex;
         justify-content: center;
         justify-items: center;
@@ -934,6 +943,7 @@ hr {
     .info {
         padding-left: 3%;
         padding-right: 3%;
+        align-items: center;
     }
     /* .info p{
         font-size: 16px;
