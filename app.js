@@ -65,5 +65,10 @@ to_projects.addEventListener('click', function(){
   smoothscroll("#project_container", 500);
 });
 to_resume.addEventListener('click', function(){
-  smoothscroll("#resume_card", 1000);
+  if(window.innerWidth < 480){
+    smoothscroll(".Ctc", 1000); 
+  }
+  else{
+    smoothscroll("#resume_card", 1000);
+  }
 });

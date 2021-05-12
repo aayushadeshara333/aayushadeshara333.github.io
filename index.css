@@ -12,7 +12,9 @@ body {
 }
 
 html {
+    --height: 0px;
     scroll-behavior: smooth;
+    scroll-padding-top: var(--height);
 }
 
 
@@ -838,8 +840,8 @@ hr {
 
     .project_card_container {
         height: 200px;
-        width: 350px;
-        margin-top: 5%;
+        width: 300px;
+        margin-top: 10%;
         /* animation: change 2s infinite;
         position: relative; */
     }
@@ -1014,6 +1016,7 @@ hr {
 
     .skills-container h1 {
         font-size: 25px;
+        margin: 10%;
     }
 
     .skills-icon {
