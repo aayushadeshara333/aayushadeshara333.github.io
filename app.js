@@ -62,7 +62,7 @@ function smoothscroll(target, duration) {
 var to_projects = document.querySelector(".to_projects");
 var to_resume = document.querySelector(".to_resume")
 to_projects.addEventListener('click', function(){
-  smoothscroll("#project_container", 500);
+  smoothscroll("#projects", 500);
 });
 to_resume.addEventListener('click', function(){
   if(window.innerWidth < 480){
@@ -72,3 +72,20 @@ to_resume.addEventListener('click', function(){
     smoothscroll("#resume_card", 1000);
   }
 });
+
+let projectCardContainers = document.querySelectorAll('.project_card_container');
+let projectCards = document.querySelectorAll('.project_card');
+
+let isTurned = [false, false, false];
+
+for (let i = 0; i < 3; i++) {
+  projectCardContainers[i].addEventListener("click", (e) => {
+    if (!isTurned[i]) {
+      isTurned[i] = true;
+      projectCards[i].style.transform = "rotateX(180deg)"; 
+    } else {
+      isTurned[i] = false;
+      projectCards[i].style.transform = "rotateX(0deg)";
+    }
+  }) 
+}

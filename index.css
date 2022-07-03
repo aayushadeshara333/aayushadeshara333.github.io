@@ -590,11 +590,11 @@ hr {
     border-radius: 20px;
 }
 
-#project_container {
+#projects {
     background-color: black;
 }
 
-#project_container h1 {
+#projects h1 {
     color: white;
     text-align: center;
     padding: 5%;
@@ -623,16 +623,19 @@ hr {
     height: 100%;
     transition: transform 0.8s;
     transform-style: preserve-3d;
+    cursor: pointer;
 }
 
-.project_card_container:hover .project_card{
+/* .project_card_container:hover .project_card{
     transform: rotateX(180deg);
-}
+} */
 
 .project_image, .project_description {
     position: absolute;
     width: 100%;
     height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
     transform: translate3d(0, 0, 0);
     -webkit-transform: translate3d(0, 0, 0);
     -ms-transform: translate3d(0, 0, 0);
@@ -844,161 +847,6 @@ hr {
         margin-top: 10%;
         /* animation: change 2s infinite;
         position: relative; */
-    }
-
-    .project_card {
-        animation: change 20s infinite;
-        position: relative;
-    }
-
-    @keyframes change {
-        0% {
-            transform: rotateX(0deg);
-        }
-
-        12.5% {
-            transform: rotateX(180deg);
-        }
-
-        25% {
-            transform: rotateX(180deg);
-        }
-
-        50% {
-            transform: rotateX(180deg);
-        }
-
-        67.5% {
-            transform: rotateX(0deg);
-        }
-
-        75% {
-            transform: rotateX(0deg);
-        }
-
-        100% {
-            transform: rotateX(0deg);
-        }
-    }
-
-    @-webkit-keyframes change {
-        0% {
-            transform: rotateX(0deg);
-        }
-
-        12.5% {
-            transform: rotateX(180deg);
-        }
-
-        25% {
-            transform: rotateX(180deg);
-        }
-
-        50% {
-            transform: rotateX(180deg);
-        }
-
-        67.5% {
-            transform: rotateX(0deg);
-        }
-
-        75% {
-            transform: rotateX(0deg);
-        }
-
-        100% {
-            transform: rotateX(0deg);
-        }
-    }
-
-    @-moz-keyframes change {
-        0% {
-            transform: rotateX(0deg);
-        }
-
-        12.5% {
-            transform: rotateX(180deg);
-        }
-
-        25% {
-            transform: rotateX(180deg);
-        }
-
-        50% {
-            transform: rotateX(180deg);
-        }
-
-        67.5% {
-            transform: rotateX(0deg);
-        }
-
-        75% {
-            transform: rotateX(0deg);
-        }
-
-        100% {
-            transform: rotateX(0deg);
-        }
-    }
-
-    @-ms-keyframes change {
-        0% {
-            transform: rotateX(0deg);
-        }
-
-        12.5% {
-            transform: rotateX(180deg);
-        }
-
-        25% {
-            transform: rotateX(180deg);
-        }
-
-        50% {
-            transform: rotateX(180deg);
-        }
-
-        67.5% {
-            transform: rotateX(0deg);
-        }
-
-        75% {
-            transform: rotateX(0deg);
-        }
-
-        100% {
-            transform: rotateX(0deg);
-        }
-    }
-
-    @-o-keyframes change {
-        0% {
-            transform: rotateX(0deg);
-        }
-
-        12.5% {
-            transform: rotateX(180deg);
-        }
-
-        25% {
-            transform: rotateX(180deg);
-        }
-
-        50% {
-            transform: rotateX(180deg);
-        }
-
-        67.5% {
-            transform: rotateX(0deg);
-        }
-
-        75% {
-            transform: rotateX(0deg);
-        }
-
-        100% {
-            transform: rotateX(0deg);
-        }
     }
 
     .objective {
